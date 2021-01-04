@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>google</title>
+</head>
+<body>
+    <form method="post" action="{{ url_for('predict') }}">
+        <input type='text' name='exp' placeholder="Experience" required='required'/>
+        <input type='number' name='test_Score' placeholder="test_score" required='required'/>
+        <input type='number' name='interview_score' placeholder="interview_score" required='required'/>
+
+        <button type='submit'>predict</button>
+
+    </form>
+</body>
+</html>
